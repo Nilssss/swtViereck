@@ -3,15 +3,15 @@ package Vierecke;
 
 public class IstQuadrat {
 
-	static int PunktAX;
-	static int PunktBX;
-	static int PunktCX;
-	static int PunktDX;
+	static double PunktAX;
+	static double PunktBX;
+	static double PunktCX;
+	static double PunktDX;
 	
-	static int PunktAY;
-	static int PunktBY;
-	static int PunktCY;
-	static int PunktDY;
+	static double PunktAY;
+	static double PunktBY;
+	static double PunktCY;
+	static double PunktDY;
 	
 	static double AB;
 	static double AC;
@@ -31,15 +31,27 @@ public class IstQuadrat {
 		
 	}
 	
+	public static void istTrapez()
+	{
+		
+		if(AB != CD && AC == BD && AD == BC){
+			System.out.println("Ist Trapez");
+		}
+		else {
+			System.out.println("Ist kein Trapez");
+		}
+
+	}
+	
 	public static void main(String[] args) {
-		PunktAX=Integer.parseInt(args[0]);
-		PunktAY=Integer.parseInt(args[1]);
-		PunktBX=Integer.parseInt(args[2]);
-		PunktBY=Integer.parseInt(args[3]);
-		PunktCX=Integer.parseInt(args[4]);
-		PunktCY=Integer.parseInt(args[5]);
-		PunktDX=Integer.parseInt(args[6]);
-		PunktDY=Integer.parseInt(args[7]);
+		PunktAX=Integer.parseDouble(args[0]);
+		PunktAY=Integer.parseDouble(args[1]);
+		PunktBX=Integer.parseDouble(args[2]);
+		PunktBY=Integer.parseDouble(args[3]);
+		PunktCX=Integer.parseDouble(args[4]);
+		PunktCY=Integer.parseDouble(args[5]);
+		PunktDX=Integer.parseDouble(args[6]);
+		PunktDY=Integer.parseDouble(args[7]);
 		
 		AB=(((PunktBX-PunktAX)*(PunktBX-PunktAX))+((PunktBY-PunktAY)*(PunktBY-PunktAY)));
 		AC=(((PunktCX-PunktAX)*(PunktCX-PunktAX))+((PunktCY-PunktAY)*(PunktCY-PunktAY)));
@@ -49,7 +61,8 @@ public class IstQuadrat {
 		CD=(((PunktDX-PunktCX)*(PunktDX-PunktCX))+((PunktDY-PunktCY)*(PunktDY-PunktCY)));
 				
 		istQuadrat();
-		istParallelogram.istParallelogram(AB,BD,AC,CD);
+		//istParallelogram.istParallelogram(AB,BD,AC,CD);
+		ist 
 	}
 	
 }
