@@ -31,7 +31,24 @@ public class IstQuadrat {
 		
 	}
 	
+<<<<<<< HEAD
 		
+=======
+	public static void istTrapez()
+	{
+		
+		if(AB != CD && AC == BD && AD == BC){
+			System.out.println("Ist Trapez");
+		}
+		else {
+			System.out.println("Ist kein Trapez");
+		}
+		
+	}
+	
+	
+	
+>>>>>>> Kunde
 	public static void main(String[] args) {
 		PunktAX=Integer.parseDouble(args[0]);
 		PunktAY=Integer.parseDouble(args[1]);
@@ -51,7 +68,11 @@ public class IstQuadrat {
 				
 		istQuadrat();
 		//istParallelogram.istParallelogram(AB,BD,AC,CD);
+<<<<<<< HEAD
 		ist 
+=======
+		istTrapez();
+>>>>>>> Kunde
 	}
 	
 }
