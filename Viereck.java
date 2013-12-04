@@ -17,10 +17,10 @@ public class Viereck {
 
     public boolean isQuadrat() {
         if ((a.x == b.x) && (a.y == d.y) && (b.y == c.y) && (c.x == d.x)) {
-            int ab = Math.abs(a.y - b.y);
-            int bc = Math.abs(b.x - c.x);
-            int cd = Math.abs(c.y - d.y);
-            int da = Math.abs(d.x - a.x);
+            double ab = Math.abs(a.y - b.y);
+            double bc = Math.abs(b.x - c.x);
+            double cd = Math.abs(c.y - d.y);
+            double da = Math.abs(d.x - a.x);
             if (ab == bc && cd == da && bc == cd) {
                 return true;
             }
@@ -30,10 +30,10 @@ public class Viereck {
 
     public boolean isRechteck(){
 	if((a.x == b.x) && (a.y == d.y) && (b.y == c.y) && (c.x == d.x) {
-		int ab = Math.abs(a.x - b.y);
-		int bc = Math.abs(b.x - c.x);
-		int cd = Math.abs(c.y -d.y);
-		int da = Math.abs(d.x - a.x);
+		double ab = Math.abs(a.x - b.y);
+		double bc = Math.abs(b.x - c.x);
+		double cd = Math.abs(c.y -d.y);
+		double da = Math.abs(d.x - a.x);
 		if (ab == cd && bc == da){
 			return true;
 		}	
