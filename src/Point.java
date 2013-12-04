@@ -3,6 +3,7 @@ public class Point{
 
 	public double x;
 	public double y;
+int a;
 	public Point(double x, double y) {
 		
 		this.x = x;
